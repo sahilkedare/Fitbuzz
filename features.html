@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITBUZZ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav style="background: #131313;" class="navbar">
+        <div class="navbar__container">
+            <a href="/index.html" id="navbar__logo">FITBUZZ</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/index.html" class="navbar__links" id="home-page">HOME</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/features.html" class="navbar__links" id="about-page">SPECS</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div style="background: linear-gradient(to right, #161616, #000000);" class="main" id="sign-up">
+        <div>
+            <h1 id="feat">Features</h1>
+        </div>
+        <div id="feature_desc">Fitbuzz Smart Watch has a 1.69 inch super Retina Display which gives a immersive and
+            satisfying experience. Fitbuzz is available in 5 different colors and has a funky and unique design. It has
+            great battery life, on a single charge it can last upto 10 Days. It has IP68 tating making it totally water
+            resistant. Also fitbuzz provides interchangeable straps to enhance your looks and 100 plus watch faces
+        </div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="images/f4.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/f5.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/f6.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/f11.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/f10.jpeg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+
+        <div class="health_img" style="text-align: center;background: linear-gradient(to right, #161616, #000000);">
+            <div>
+                <h1 id="feat">Health Features</h1>
+            </div>
+            <div id="health">
+                <img class="pics" style="border-radius: 8px;" src="images/f4.jpg" alt="">
+            </div>
+            <div id="health">
+                <img class="pics" style="border-radius: 8px;" src="images/f9.jpeg" alt="">
+            </div>
+            <div id="health">
+                <img class="pics" style="border-radius: 8px;" src="images/f12.jpeg" alt="">
+            </div>
+            <div id="health">
+                <img class="pics" style="border-radius: 8px;" src="images/f13.jpg" alt="">
+            </div>
+            <div id="health" style="padding-bottom:40px ">
+                <img class="pics" style="border-radius: 8px;" src="images/f14.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__container">
+        <section class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="/" id="footer__logo">FITBUZZ</a>
+                </div>
+                <p class="website__rights">© FITBUZZ 2020. All rights reserved</p>
+                <div class="social__icons">
+                    <a href="/" class="social__icon--link" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="/" class="social__icon--link"><i class="fab fa-instagram"></i></a>
+                    <a href="/" class="social__icon--link"><i class="fab fa-youtube"></i></a>
+                    <a href="/" class="social__icon--link"><i class="fab fa-linkedin"></i></a>
+                    <a href="/" class="social__icon--link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 6) {
+                counter = 1;
+            }
+        }, 3400);
+    </script>
+</body>
+
+</html>
