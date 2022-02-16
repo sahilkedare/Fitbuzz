@@ -6,15 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FITBUZZ</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-</head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Merienda:wght@700&display=swap" rel="stylesheet">
+    </head>
 
 <body>
     <nav style="background: #131313;" class="navbar">
         <div class="navbar__container">
-            <a href="/index.html" id="navbar__logo">FITBUZZ</a>
+            <a href="../index.html" id="navbar__logo">FITBUZZ</a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -22,10 +25,10 @@
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a href="/index.html" class="navbar__links" id="home-page">HOME</a>
+                    <a href="../index.html" class="navbar__links" id="home-page">HOME</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/features.html" class="navbar__links" id="about-page">SPECS</a>
+                    <a href="/features.html" class="navbar__links" style="color:  #8f0eff;" id="about-page">SPECS</a>
                 </li>
 
             </ul>
@@ -43,22 +46,22 @@
         <div class="slideshow-container">
 
             <div class="mySlides fade">
-                <img src="images/f4.jpg" style="width:100%">
+                <img src="../images/f4.jpg" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-                <img src="images/f5.jpeg" style="width:100%">
+                <img src="../images/f5.jpeg" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-                <img src="images/f6.jpeg" style="width:100%">
+                <img src="../images/f6.jpeg" style="width:100%">
             </div>
             <div class="mySlides fade">
-                <img src="images/f11.jpeg" style="width:100%">
+                <img src="../images/f11.jpeg" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-                <img src="images/f10.jpeg" style="width:100%">
+                <img src="../images/f10.jpeg" style="width:100%">
             </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -77,19 +80,19 @@
                 <h1 id="feat">Health Features</h1>
             </div>
             <div id="health">
-                <img class="pics" style="border-radius: 8px;" src="images/f4.jpg" alt="">
+                <img class="pics" style="border-radius: 8px;" src="../images/f4.jpg" alt="">
             </div>
             <div id="health">
-                <img class="pics" style="border-radius: 8px;" src="images/f9.jpeg" alt="">
+                <img class="pics" style="border-radius: 8px;" src="../images/f9.jpeg" alt="">
             </div>
             <div id="health">
-                <img class="pics" style="border-radius: 8px;" src="images/f12.jpeg" alt="">
+                <img class="pics" style="border-radius: 8px;" src="../images/f12.jpeg" alt="">
             </div>
             <div id="health">
-                <img class="pics" style="border-radius: 8px;" src="images/f13.jpg" alt="">
+                <img class="pics" style="border-radius: 8px;" src="../images/f13.jpg" alt="">
             </div>
             <div id="health" style="padding-bottom:40px ">
-                <img class="pics" style="border-radius: 8px;" src="images/f14.jpeg" alt="">
+                <img class="pics" style="border-radius: 8px;" src="../images/f14.jpeg" alt="">
             </div>
         </div>
     </div>
@@ -112,16 +115,8 @@
         </section>
     </div>
 
-    <script src="app.js"></script>
+    <script src="../app.js"></script>
     <script type="text/javascript">
-        var counter = 1;
-        setInterval(function () {
-            document.getElementById('radio' + counter).checked = true;
-            counter++;
-            if (counter > 6) {
-                counter = 1;
-            }
-        }, 3400);
     </script>
 </body>
 
